@@ -1,7 +1,7 @@
 async function buscarUsuarios() {
 
     const resposta = await fetch(
-      "https://jsonplaceholder.typicode.com/users"
+      "http://127.0.0.1:5000"
     );
   
     const usuarios = await resposta.json();
@@ -15,7 +15,9 @@ async function buscarUsuarios() {
     usuarios.forEach(usuario => {
   
       lista.innerHTML += `
-        <li>${usuario.name}</li>
+        <li>${usuario.name}</li> <br>
+        <li>${usuario.email}</li> <br>
+        <li>${usuario.telefone}</li>
       `;
   
     });
