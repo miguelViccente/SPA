@@ -1,7 +1,7 @@
 async function buscarUsuarios() {
 
     const resposta = await fetch(
-      "http://127.0.0.1:5000"
+      "https://spa-5m5q.onrender.com/usuarios"
     );
   
     const usuarios = await resposta.json();

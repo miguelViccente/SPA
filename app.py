@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 CORS(app)
 
+@app.route('/')
+def home():
+    return 'API funcionando!'
+
 usuarios = [
     {
         "nome": "miguel1 angelo",
