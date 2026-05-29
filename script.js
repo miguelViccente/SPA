@@ -15,7 +15,7 @@ async function buscarUsuarios() {
     usuarios.forEach(usuario => {
   
       lista.innerHTML += `
-        <li>${usuario.name}</li> <br>
+        <li>${usuario.nome}</li> <br>
         <li>${usuario.email}</li> <br>
         <li>${usuario.telefone}</li>
       `;
